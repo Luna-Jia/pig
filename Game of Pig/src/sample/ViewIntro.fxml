@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.IntroController">
+    <children>
+        <Pane minHeight="600.0" minWidth="800.0" prefHeight="650.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Text fill="#462216" layoutX="236.0" layoutY="93.0" stroke="#b96e55" strokeType="OUTSIDE" strokeWidth="0.0" text="Game of Pig!" textAlignment="CENTER" wrappingWidth="327.13671875">
+                    <font>
+                        <Font size="60.0" />
+                    </font>
+               <effect>
+                  <SepiaTone>
+                     <input>
+                        <SepiaTone />
+                     </input>
+                  </SepiaTone>
+               </effect>
+                </Text>
+                <ImageView id="startImg" fx:id="startImg" fitHeight="235.0" fitWidth="305.0" layoutX="271.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img_1.png" />
+                    </image>
+                </ImageView>
+                <Pane layoutX="21.0" layoutY="387.0" prefHeight="249.0" prefWidth="758.0">
+                    <children>
+                        <Button layoutX="406.0" layoutY="139.0" mnemonicParsing="false" onAction="#displayHistoryScene" prefHeight="41.0" prefWidth="110.0" text="Display History" />
+                        <Button fx:id="startBtn" layoutX="242.0" layoutY="139.0" mnemonicParsing="false" onAction="#startButton" prefHeight="41.0" prefWidth="110.0" text="Start">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Text layoutX="55.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1:" wrappingWidth="90.13671875">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="416.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2:" wrappingWidth="90.13671875">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="nameBox2" layoutX="529.0" layoutY="62.0" prefHeight="32.0" prefWidth="156.0" promptText="Enter name" />
+                        <TextField fx:id="nameBox1" layoutX="164.0" layoutY="63.0" prefHeight="32.0" prefWidth="156.0" promptText="Enter name" />
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

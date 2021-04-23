@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GameViewController">
+    <children>
+        <Pane fx:id="displayLabel" prefHeight="650.0" prefWidth="800.0">
+            <children>
+                <Label fx:id="nameLabel2" layoutX="600.0" layoutY="500.0" prefHeight="25.0" prefWidth="100.0" text="Player 2">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="nameLabel1" layoutX="200.0" layoutY="500.0" prefHeight="25.0" prefWidth="100.0" text="Player 1">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="rollBtn" layoutX="370.0" layoutY="502.0" mnemonicParsing="false" onAction="#rollButton" prefHeight="25.0" prefWidth="100.0" text="ROLL">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="holdBtn" layoutX="370.0" layoutY="544.0" mnemonicParsing="false" onAction="#holdButton" prefHeight="25.0" prefWidth="100.0" text="HOLD">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Label fx:id="turnLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="310.0" layoutY="51.0" prefHeight="63.0" prefWidth="220.0" text="Label" textAlignment="CENTER" textFill="#57300b">
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="imageDiceView" fitHeight="266.0" fitWidth="262.0" layoutX="289.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../diceimg.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="scoreLabel1" layoutX="176.0" layoutY="530.0" prefHeight="56.0" prefWidth="132.0" text="Label" textFill="#0758ee">
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+               <effect>
+                  <Glow level="0.56" />
+               </effect>
+                </Label>
+                <Label fx:id="scoreLabel2" layoutX="599.0" layoutY="530.0" prefHeight="56.0" prefWidth="132.0" text="Label" textAlignment="CENTER" textFill="#f52323">
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Glow level="0.53">
+                     <input>
+                        <Glow />
+                     </input>
+                  </Glow>
+               </effect>
+                </Label>
+                <Label fx:id="scoreLabelGen" alignment="CENTER" contentDisplay="CENTER" layoutX="242.0" layoutY="438.0" maxWidth="500.0" prefHeight="27.0" prefWidth="357.0" text="Label" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
